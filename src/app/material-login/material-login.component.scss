@@ -1,0 +1,152 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    .hero{
+        height: 100%;
+        width: 50%;
+        background-color: rgb(209, 236, 252);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .circle {
+            width: 13rem;
+            height: 13rem;
+            border-radius: 50%;
+            background-color: purple;
+
+            
+        }
+        .outer-circle {
+            width: 20rem;
+            height: 10rem;
+            position: absolute;
+            background-color: rgb(255,255,255 , .25);
+            border-radius: 0 0 10rem 10rem;
+
+            backdrop-filter: blur(30px);
+
+            transform: translateY(5rem);
+            
+        }
+    }
+
+    .login-card {
+        direction: rtl;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+
+        .login-form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .title {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                width: 40%;
+            }
+            p{
+                width: 40%;
+            }
+            .email-input {
+                width: 100%;
+            }
+            .password-input {
+                width: 100%;
+            }
+
+            .cokie {
+                display: flex;
+                width: 40%;
+                align-content: center;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            .signin {
+                width: 40%;
+                margin: 1rem;
+                button {
+                    width: 100%;
+                    background-color: purple;
+                }
+            }
+
+            footer {
+                width: 40%;
+                p {
+                    width: 100%;
+                    color: gray;
+                }
+                span {
+                    color: rgba(185, 93, 93, 0.693);
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        .hero {
+            height: auto;
+            width: auto;
+            background-color: unset;
+
+            margin: 2rem 0;
+
+            .circle {
+                width: 7rem;
+                height: 7rem;
+                border-radius: 50%;
+                background-color: purple;
+                
+            }
+            .outer-circle {
+                width: 10rem;
+                height: 5rem;
+                position: absolute;
+                background-color: rgb(255,255,255 , .25);
+                border-radius: 0 0 10rem 10rem;
+    
+                backdrop-filter: blur(10px);
+    
+                transform: translateY(2rem);
+                
+            }
+        }
+
+        
+        
+    }
+    .title {
+        width: 90% !important;
+    }
+    p {
+        width: 90% !important;
+    }
+    .cokie {
+        width: 90% !important;
+    }
+    .signin {
+        width: 90% !important;
+    }
+    footer {
+        width: 90% !important;
+        text-align: center;
+    }
+}

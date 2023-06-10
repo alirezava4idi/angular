@@ -1,0 +1,96 @@
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card
+{
+    width: 100%;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+.info, .address, .skills > section
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem;
+    // background-color: bisque;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1px solid black;
+}
+.form-field
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 21%;
+}
+.form-field > label {
+    margin-bottom: .5rem;
+}
+
+.form-input
+{
+    padding: .5rem .75rem;
+    
+}
+
+.form-input:focus 
+{
+    outline: none;
+}
+
+::ng-deep .datepicker-outer-container
+{
+    position: absolute;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+}
+
+.address > *
+{
+    flex: 1 0 40%;
+}
+
+.skills > section
+{
+    gap: .5rem;
+}
+.btns > *
+{
+    margin: .5rem;
+}
+
+@media screen and (min-width: 1000px) {
+    .container
+    {
+        margin: 5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .form-field
+    {
+        flex: 1 0 100%;
+    }
+    .address > *
+    {
+        flex: 1 0 100%;
+    }
+    .card {
+        background: rgb(34,193,195);
+        background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    }
+
+    .btns {
+        display: flex;
+        justify-content: space-between;
+    }
+}
