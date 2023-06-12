@@ -73,9 +73,11 @@ th, td {
     text-align: inherit;
 }
 
-table
+.table
 {
+    width: 100%;
     margin-top: 1rem !important;
+    overflow-x: auto !important;
 }
 
 th {
@@ -91,6 +93,16 @@ tr:hover
 .action-btns > button
 {
     margin: .5rem;
+}
+
+.toolbar
+{
+    background-color: rgba(34,193,195,1);
+    font-weight: 900;
+    font-size: 1.2rem;
+    position: sticky !important;
+    top: 0;
+    z-index: 2;
 }
 
 @media screen and (min-width: 1000px) {
@@ -110,8 +122,12 @@ tr:hover
         flex: 1 0 100%;
     }
     .card {
+        width: 100%;
         background: rgb(34,193,195);
         background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    }
+    form {
+        width: 100vw
     }
 
     .btns {

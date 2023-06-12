@@ -1,4 +1,10 @@
+<div class="toolbar-container toolbar">
+    <mat-toolbar color="primary" class="toolbar" [class.mat-elevation-z8] = "true">
+        <span>عنوان</span>
+    </mat-toolbar>
+</div>
 <div class="container">
+    
     <form action="">
         <mat-card class="card">
             <mat-card-header>
@@ -91,6 +97,7 @@
             </mat-card-content>
         </mat-card>
     </form>
+    <div class="table">
     <table mat-table [dataSource]="dataSource" matSort>
         <!-- Position Column -->
         <ng-container matColumnDef="id">
@@ -132,6 +139,6 @@
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
       </table>
-
+    </div>
       
 </div>

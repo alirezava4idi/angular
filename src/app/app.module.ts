@@ -20,6 +20,7 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 
 
@@ -49,6 +50,7 @@ import {MatSortModule} from '@angular/material/sort';
     MatDividerModule,
     MatTableModule,
     MatSortModule,
+    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
