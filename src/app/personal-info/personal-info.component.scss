@@ -61,9 +61,34 @@ textarea {
 
 .skills > section
 {
+    align-content: baseline;
     gap: .5rem;
 }
 .btns > *
+{
+    margin: .5rem;
+}
+
+th, td {
+    text-align: inherit;
+}
+
+table
+{
+    margin-top: 1rem !important;
+}
+
+th {
+    background-color: black !important;
+    color: white;
+}
+
+tr:hover
+{
+    background-color: rgb(198, 190, 190) !important;
+}
+
+.action-btns > button
 {
     margin: .5rem;
 }

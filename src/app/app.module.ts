@@ -18,6 +18,9 @@ import { NgPersianDatepickerModule } from 'ng-persian-datepicker';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatTableModule} from '@angular/material/table';
+import {MatSortModule} from '@angular/material/sort';
+
 
 
 
@@ -27,7 +30,7 @@ import {MatDividerModule} from '@angular/material/divider';
     AppComponent,
     LoginComponent,
     MaterialLoginComponent,
-    PersonalInfoComponent
+    PersonalInfoComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,6 +47,8 @@ import {MatDividerModule} from '@angular/material/divider';
     ReactiveFormsModule,
     MatRadioModule,
     MatDividerModule,
+    MatTableModule,
+    MatSortModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
